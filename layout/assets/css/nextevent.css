@@ -20,7 +20,6 @@
     margin-top: 33px;
 }
 
-
 .container {
     max-width: 1320px;
     margin-left: auto;
@@ -67,7 +66,6 @@
 
 .image {
     border-radius: 20px;
-
 }
 
 .mt10 {
@@ -77,8 +75,6 @@
 .mt30 {
     margin-bottom: 30px;
 }
-
-
 
 .cardinfo {
     font-family: 'Poppins';
@@ -151,7 +147,6 @@
         padding-left: 12px;
         padding-right: 12px;
     }
-
 }
 
 .mb-lh-0 {
@@ -161,9 +156,6 @@
 .bg {
     background-color: #000;
 }
-
-
-
 
 .f_f {
     font-family: 'Poppins';
@@ -218,7 +210,6 @@
     justify-content: space-between;
 }
 
-
 .font_f {
     font-family: 'Poppins';
     font-style: normal;
@@ -240,7 +231,6 @@
 }
 
 ul li a {
-
     color: #FFFFFF;
 }
 
@@ -266,10 +256,7 @@ ul li a {
     font-weight: 700;
     font-size: 12px;
     color: white;
-
 }
-
-
 
 @media(min-width:768px) {
     .col-md-5 {
@@ -401,7 +388,6 @@ ul li a {
     font-size: 64px;
     line-height: 150%;
     color: #FFFFFF;
-
 }
 
 header ul li:not(:last-child) a {
@@ -421,65 +407,62 @@ header ul li:not(:last-child) a {
     padding-bottom: 40px;
 }
 
-
-
 .z-index-1 {
     z-index: 1;
 }
 
-
-@media (max-width:992px) {
-
+@media(max-width:992px) {
     div>a img {
         height: 56px;
     }
 
-    div>a {
-        font-size: 28px !important;
-    }
 
-    .mobile_view {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: -100%;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        pointer-events: none;
-        background-color: aqua;
-    }
+div>a {
+    font-size: 28px !important;
+}
 
-    label[for="menu_box"]>p {
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: whitesmoke;
-    }
+input[type="checkbox"]:checked~ul.mobile_view {
+    opacity: 1;
+    pointer-events: all;
+    left: 0;
+}
+.mobile_view {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    background-color: #01C8FF;
+    transition: all .3s linear;
+}
 
-    label[for="menu_box"] {
-        width: 30px;
-        height: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-    }
+label[for="menu_box"]>span {
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: whitesmoke;
+}
+}
 
-    input[type="chekbox"]:checked~ul.mobile_view {
-        opacity: 1;
-        pointer-events: all;
-        left: 0;
-    }
+label[for="menu_box"] {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
 
-    header ul li {
-        margin: 25px;
-    }
+header ul li {
+    margin: 25px;
+}
 
-    header ul li:not(:last-child) a {
-        margin-right: 0;
-    }
+header ul li:not(:last-child) a {
+    margin-right: 0;
 }
